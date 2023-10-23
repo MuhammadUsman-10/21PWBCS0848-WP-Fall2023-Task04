@@ -1,0 +1,314 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+nav
+{
+    background-color: #101010;
+    height: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px;
+    padding-left: 4%;
+    padding-right: 3%;
+    position: fixed;
+
+}
+.logo
+{
+    color: orangered;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span
+{
+    color: orangered;
+}
+nav ul li
+{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover 
+{
+    color: orangered;
+    transition: .4s;
+}
+.hero 
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url(Images/bg\ pic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.grid-container1 
+{
+    display: grid;
+    grid-template-columns: 250px, 1fr;
+    width: 600px;
+    gap: 10px;
+    padding: 20px;
+}
+.featured-item 
+{
+    margin-top:10%;
+    grid-column: span 2;
+    border: 1px solid transparent;
+    padding: 20px;
+    text-align: center;
+    margin-left: 20%;
+}
+.featured-item h2
+{
+    margin-top: 5%;
+    font-size: 50px;
+    color: orangered;
+}
+.featured-item h3
+{
+    text-align: center;
+    color: orangered;
+    font-size: 30px;
+
+}
+.featured-item p
+{
+    text-align: center;
+    width: 350px;
+    margin-left: 7%;
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+.About-Us
+{
+    height: 90vh;
+    background-image: url(Images/guit\ bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 100px;
+}
+.about-text
+{
+    margin-left: 40%;
+    width: 600px;
+}
+.main
+{
+    width: 1130px;
+    max-width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2
+{
+    color: orangered;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-top: -10%;
+    margin-bottom: 20px;
+}
+.about-text h5
+{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+.about-text p
+{
+    color: orange;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.button
+{
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: .4s;
+}
+.button:hover
+{
+    background-color: transparent;
+    border: 2px solid orangered;
+    cursor: pointer;
+}
+.products
+{
+    background: #101010;
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+}
+
+.grid-container 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+.grid-item 
+{
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+.grid-item h2
+{
+    color: orangered;
+    font-size: 30px;
+}
+.grid-item p
+{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+.title h2
+{
+    color: orangered;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.Contact-Us
+{
+    background-image: url(Images/bg\ \ main.jpg);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+}
+form
+{
+    background-color: #191919;
+    opacity: 70%;
+    padding: 20px;
+    margin-left: 15%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    height: 50vh;
+}
+form h2
+{
+    text-align: center;
+    color: orangered;
+}
+label
+{
+    color: orangered;
+}
+input[type="text"],
+input[type="email"],
+textarea
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: darkgrey;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button
+{
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: .4s;
+}
+button:hover
+{
+    background-color: transparent;
+    border: 2px solid orangered;
+    cursor: pointer;
+}
+footer
+{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1)
+{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+}
+footer p:nth-child(2)
+{
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social
+{
+    display: flex;
+}
+.social a
+{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: orangered;
+    border-radius: 50px;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.social a:hover
+{
+    background-color: transparent;
+    color: orangered;
+    transition: .3s;
+}
+.end
+{
+    position: absolute;
+    color: orangered;
+    bottom: 35px;
+    font-size: 14px;
+}
